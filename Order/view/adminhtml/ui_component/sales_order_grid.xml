@@ -1,0 +1,28 @@
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="sales_order_columns">
+        <column name="expected_date" class="BroSolutions\Order\Ui\Component\Listing\Column\ExpectedDate">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Expected Arrival Date</item>
+                </item>
+            </argument>
+        </column>
+        <column name="next_contact_date" class="BroSolutions\Order\Ui\Component\Listing\Column\NextContactDate">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Customer Contact Date</item>
+                </item>
+            </argument>
+        </column>
+        <column name="total_due" class="BroSolutions\Order\Ui\Component\Listing\Column\TotalDue">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Total Due</item>
+                </item>
+            </argument>
+        </column>
+    </columns>
+</listing>
